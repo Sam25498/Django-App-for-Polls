@@ -1,5 +1,5 @@
 INSTALLED_APPS = [
-    'pollsapp.apps.PollsConfig',
+    'pollsapp.apps.PollsappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
