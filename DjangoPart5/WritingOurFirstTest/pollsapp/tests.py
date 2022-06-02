@@ -70,7 +70,7 @@ class QuestionIndexViewTests(TestCase):
             response.context['latest_question_list'],
             [question],
         )
-  def test_two_past_questions(self):
+    def test_two_past_questions(self):
         """
         The questions index page may display multiple questions.
         """
