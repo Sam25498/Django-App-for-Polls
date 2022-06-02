@@ -89,7 +89,7 @@ class QuestionDetailViewTests(TestCase):
         returns a 404 not found.
         """
         future_question = create_question(question_text='Future question.', days=5)
-        url = reverse('pollsapp:detail', args=future_question.id, )
+        url = reverse('pollsapp:detail',args=(future_question.id, ))
         response = self.client.get(url)
         self.assertEqual(response.status_code, 404)
         
